@@ -1,0 +1,22 @@
+﻿<Window x:Class="Predmetni_projekat_Nevena_Panić_PR43_2018.Windows.EditTextWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Predmetni_projekat_Nevena_Panić_PR43_2018.Windows"
+        mc:Ignorable="d"
+        Title="Edit Text Window" Height="250" Width="400" Background="#171717" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Text values to change:" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="10,15,10,0" Foreground="#DA0037"/>
+        <Label Content="Text color :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,53,0,0" Width="74" Foreground="#DA0037"/>
+        <ComboBox x:Name="color_cb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" Margin="98,56,0,0"/>
+        <Label Content="Font Size :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,99,0,0" Width="74" Foreground="#DA0037"/>
+        <TextBox x:Name="size_tb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="98,100,0,0" Height="25"/>
+
+        <Label Content="Opacity [%] :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,100,0,0" Foreground="#DA0037"/>
+        <TextBox x:Name="opacity_tb" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="280,100,0,0" Height="25"/>
+
+        <Button x:Name="edit_btn" Content="Edit" HorizontalAlignment="Left" Margin="295,175,0,0" VerticalAlignment="Top" Width="75" Background="#444444" Foreground="Beige" Click="edit_btn_Click"/>
+        <Button x:Name="quit_btn" Content="Quit" HorizontalAlignment="Left" Margin="210,175,0,0" VerticalAlignment="Top" Width="75" Background="#444444" Foreground="Beige" Click="quit_btn_Click"/>
+    </Grid>
+</Window>
